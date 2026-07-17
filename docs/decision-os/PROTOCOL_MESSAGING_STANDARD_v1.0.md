@@ -125,5 +125,26 @@ END OF MESSAGE
 - `ACCEPTED_WITH_KNOWN_RISKS`
 - `REJECTED`
 - `CLOSED`
+- `REVISION_REQUIRED`
+- `DEFERRED_FOR_EVIDENCE`
+- `PARTIALLY_EXECUTED`
+- `FAILED`
+
+این ۱۳ مقدار، فهرست کامل و یکپارچهٔ `STATUS` برای Header پروتکل است. چهار مقدار آخر پیش‌تر در
+`docs/decision-os/HUMAN_GATES.md` (خروجی Gate 1 و Gate 2)، `docs/decision-os/ROLES_AND_AUTHORITY.md`
+(وضعیت‌های پیشنهادی Reviewer)، و `.decision-os/templates/EXECUTION_REPORT_TEMPLATE.md` (بخش
+Final Status) استفاده می‌شدند بدون این‌که در این فهرست پایه ثبت شده باشند — این افزودن صرفاً
+همان مقادیر از پیش در‌حال‌استفاده را یکپارچه می‌کند و هیچ مقدار موجودی را حذف یا تغییرنام نمی‌دهد.
+
+### فیلدهای مشابه که عمداً جدا از `STATUS` هستند
+
+دو مورد زیر شبیه `STATUS` به‌نظر می‌رسند اما مفهوم متفاوتی دارند و نباید با آن یکی گرفته شوند:
+
+- **`Final Verdict`** در `.decision-os/templates/CHALLENGE_REPORT_TEMPLATE.md`
+  (`ACCEPTABLE`, `ACCEPTABLE_WITH_CHANGES`, `REQUIRES_RED_DESIGN`, `BLOCKED_PENDING_EVIDENCE`) —
+  قضاوت Technical Challenger دربارهٔ کیفیت Proposal است، نه وضعیت چرخهٔ‌عمر یک پیام. هیچ‌کدام از
+  این چهار مقدار به فهرست `STATUS`های پایه اضافه نشدند.
+- **`BOOTSTRAP_ACCEPTED`** در `README.md` — طبق توضیح همان بخش، خروجی یک Direct Human Execution
+  است، نه خروجی یک `HUMAN_GATES.md` Gate یا معادل `FINAL_DECISION_RECORD`.
 
 افزودن فیلدهای جدید به Header در نسخهٔ 1.0 ممنوع است مگر با تصمیم رسمی.
