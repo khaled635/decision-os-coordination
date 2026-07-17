@@ -1,0 +1,51 @@
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Decision OS Protocol Message
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+LANGUAGE:
+fa
+
+MESSAGE_ID:
+<unique-message-id>
+
+INTERACTION_ID:
+<stable-interaction-id>
+
+ROUND:
+<number>
+
+MESSAGE_TYPE:
+<message-type>
+
+STATUS:
+<status>
+
+FROM:
+<sender-role>
+
+TO:
+<receiver-role>
+
+ACTION_REQUIRED:
+<requested-action>
+
+AUTHORITY:
+<authority-level>
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+# زمینه
+
+...
+
+# موضوع
+
+...
+
+# درخواست یا خروجی
+
+...
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+END OF MESSAGE
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
