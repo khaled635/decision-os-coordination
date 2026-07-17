@@ -87,6 +87,18 @@ END OF MESSAGE
 - `ROUND` با هر دور Challenge افزایش می‌یابد.
 - هیچ Agentی نباید شناسهٔ پیام قبلی را بازنویسی کند.
 
+### قرارداد موقت تولید شناسه
+
+قرارداد زیر **سبک و موقت** است — هیچ Registry مرکزی یا سازوکار تضمین‌کنندهٔ یکتایی ندارد؛ فقط
+برای خوانایی و کاهش تصادم دستی است. تغییر یا جایگزینی آن در آینده نیازمند تصمیم رسمی نیست، چون
+خودِ این بخش جایگزین‌شدنی و غیرالزام‌آور اعلام شده است.
+
+- `INTERACTION_ID`: قالب `INTR-<YYYY-MM-DD>-<topic-slug>`. فقط یک‌بار، توسط فرستندهٔ اولین پیام
+  یک تعامل ساخته می‌شود و تا پایان همان تعامل ثابت می‌ماند.
+- `MESSAGE_ID`: قالب `MSG-<ROLE_ABBR>-<TYPE_ABBR>-<sequence>` — مثلاً `MSG-EXEC-REPORT-001`.
+  `ROLE_ABBR` نمونه: `HUMAN`, `ARCH`, `CHAL`, `EXEC`. `TYPE_ABBR` نمونه: `TASK`, `REPORT`,
+  `PROPOSAL`. `sequence` عددی افزایشی سه‌رقمی، مستقل برای هر `INTERACTION_ID`.
+
 ## Message Typeهای پایه
 
 - `DECISION_PROPOSAL`
@@ -95,6 +107,7 @@ END OF MESSAGE
 - `ARCHITECT_RESPONSE`
 - `HUMAN_COMMENT`
 - `HUMAN_DECISION`
+- `ROLE_ACKNOWLEDGEMENT`
 - `EXECUTION_TASK`
 - `EXECUTION_REPORT`
 - `REVIEW_REQUEST`
