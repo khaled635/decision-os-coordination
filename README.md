@@ -36,8 +36,10 @@
 - `docs/decision-os/PROTOCOL_MESSAGING_STANDARD_v1.0.md`
 - `docs/decision-os/HUMAN_GATES.md`
 - `docs/decision-os/CONTEXT_DISTRIBUTION.md`
+- `docs/decision-os/PROCESS_DISCOVERIES.md`
 - `docs/decisions/ADR-0009-language-and-presentation-policy.md`
 - `docs/decisions/ADR-0010-runtime-architecture-and-repository-roles.md`
+- `docs/decisions/ADR-0011-evidence-based-protocol-evolution.md`
 
 ## نوع اجرا: Direct Human Execution در برابر Decision OS Workflow
 
